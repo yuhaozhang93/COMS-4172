@@ -12,7 +12,7 @@ public class EmptyBarnController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		rotateSpeed = 50.0f;
+		rotateSpeed = 40.0f;
 		rotateRadius = 20.0f;
 		rotateHeight = 8.0f;
 		spinSpeed = 100.0f;

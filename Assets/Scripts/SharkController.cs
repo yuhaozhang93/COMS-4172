@@ -6,12 +6,13 @@ public class SharkController : MonoBehaviour {
 
 	public float speed;
 	public int interv;
+
 	// Use this for initialization
 	void Start () {
 		transform.localPosition = Vector3.zero;
 		transform.localEulerAngles = new Vector3 (0, -180, 0);
-		speed = 40.0f;
-		interv = 10;
+		speed = 30.0f;
+		interv = 20;
 	}
 
 	// Update is called once per frame

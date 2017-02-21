@@ -11,7 +11,7 @@ public class EmptySharkController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		rotateSpeed = 80.0f;
+		rotateSpeed = 60.0f;
 		rotateRadius = 25.0f;
 		rotateHeight = 10.0f;
 		transform.position = rotationCenter.transform.position + new Vector3 (rotateRadius, rotateHeight, 0);
