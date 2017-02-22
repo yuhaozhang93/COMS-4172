@@ -8,12 +8,16 @@ public class EmptyCarController : MonoBehaviour {
 	public float rotateHeight;
 	public GameObject rotationCenter;
 
+	public bool isSelected;
+
 	// Use this for initialization
 	void Start () {
 		rotateSpeed = 30.0f;
 		rotateRadius = 15.0f;
 		rotateHeight = 0;
 		transform.position = rotationCenter.transform.position + new Vector3 (rotateRadius, rotateHeight, 0);
+
+		isSelected = false;
 	}
 
 	// Update is called once per frame

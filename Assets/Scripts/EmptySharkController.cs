@@ -9,12 +9,16 @@ public class EmptySharkController : MonoBehaviour {
 	public float rotateHeight;
 	public GameObject rotationCenter;
 
+	public bool isSelected;
+
 	// Use this for initialization
 	void Start () {
 		rotateSpeed = 60.0f;
 		rotateRadius = 25.0f;
-		rotateHeight = 10.0f;
+		rotateHeight = 20.0f;
 		transform.position = rotationCenter.transform.position + new Vector3 (rotateRadius, rotateHeight, 0);
+
+		isSelected = false;
 	}
 
 	// Update is called once per frame

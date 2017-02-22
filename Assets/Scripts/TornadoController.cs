@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class TornadoController : MonoBehaviour {
 
-	public float rotateSpeed;
+	public float rotateSpeed; 
 	public float rotateRadius;
 	public GameObject rotateCenter;
 
+	public bool isSelected;
 
 	// Use this for initialization
 	void Start () {
-		rotateSpeed = 20.0f;
-		rotateRadius = 0;
 		transform.position = rotateCenter.transform.position + new Vector3 (rotateRadius, 0, 0);
+		rotateSpeed = 40.0f;
+		rotateRadius = 0;
+		isSelected = false;
 	}
 	
 	// Update is called once per frame
