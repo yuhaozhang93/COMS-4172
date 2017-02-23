@@ -22,4 +22,8 @@ public class TornadoController : MonoBehaviour {
 	void Update () {
 		transform.RotateAround (rotateCenter.transform.position, rotateCenter.transform.up, rotateSpeed * Time.deltaTime);
 	}
+
+	void OnTriggerEnter(Collider other) {
+		Destroy(other.gameObject);
+	}
 }
